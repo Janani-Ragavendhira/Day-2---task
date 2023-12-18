@@ -10,12 +10,12 @@ public class FinalAmount {
         else if (bill_amount >= 500 && bill_amount <= 1000) {
                 double Discount_1 = (bill_amount * 10) / 100;
                 System.out.println("WOW! you got 10% discount");
-                System.out.println("Yours purchased amount is : " + (Discount_1 + bill_amount));
+                System.out.println("Yours purchased amount is : " + (bill_amount - Discount_1));
         }
         else {
             double Discount_2 = (bill_amount * 20) / 100;
             System.out.println("Congrats! you got 20% discount");
-            System.out.println("Your bill amount is : " + (Discount_2 + bill_amount));
+            System.out.println("Your bill amount is : " + (bill_amount - Discount_2));
         }
     }
 }
